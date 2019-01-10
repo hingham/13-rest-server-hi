@@ -1,29 +1,34 @@
 'use strict';
 
-const uuid = require('uuid/v4');
+const product = require('./product-schema.js');
 
-const schema = {
-};
-
+/**
+ *
+ *
+ * @class Products
+ */
 class Products {
 
   constructor() {
-    this.database = [];
   }
 
-  get(id) {
+  get(_id) {
+    let queryObject = _id ? {_id} : {};
+    return product.find(queryObject);
   }
   
-  post(entry) {
+  post(record) {
+    let newRecord = new product(record);
+    return newRecord.save();
   }
 
   put(id, entry) {
+    entry._id = id;
+    return product.update({"_id": id}, {$set:{"category":entry.category, "name": entry.name, "description":entry.description, "display": entry.display} });
   }
 
   delete(id) {
-  }
-
-  sanitize(entry) {
+    return product.deleteOne({"_id": id} );
   }
 
 }
