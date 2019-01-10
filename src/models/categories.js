@@ -1,7 +1,12 @@
 'use strict';
-let sanitize = require('./sanitize');
+let sanitize = require('./category-sanitize.js');
 let uuid = require('uuid/v4');
 
+/**
+ *
+ *
+ * @class Categories
+ */
 class Categories {
 
   constructor() {
