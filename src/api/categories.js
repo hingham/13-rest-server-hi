@@ -4,8 +4,15 @@ const express = require('express');
 
 const Categories = require('../models/categories.js');
 const categories = new Categories();
+const swaggerUI = require('swagger-ui-express');
 
 const router = express.Router();
+
+
+
+const swaggerDocs = require('../../docs/lab-13-swagger.json');
+router.use('/api/v1/doc/', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
+
 
 // ROUTES
 router.get('/api/v1/categories', getCategories);

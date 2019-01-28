@@ -22,9 +22,6 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-// Routes
-// app.use(teamRouter);
-//app.use(playersRouter);
 
 app.use(categoriesRouter);
 app.use(productRouter);

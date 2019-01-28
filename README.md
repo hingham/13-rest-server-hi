@@ -6,17 +6,17 @@
 ### Author: Hannah Ingham
 
 ### Links and Resources
-* [repo]
-* [travis]
+* [repo](https://github.com/hingham/13-rest-server-hi)
+* [![Build Status](https://www.travis-ci.com/hingham/13-rest-server-hi.svg?branch=master)](https://www.travis-ci.com/hingham/13-rest-server-hi)
 * [back-end](https://lab-13-hi.herokuapp.com/)
 
 
 #### Documentation
-* [swagger](http://xyz.com) (API assignments only)
-* [jsdoc](http://xyz.com) (All assignments)
+* [swagger](ttps://lab-13-hi.herokuapp.com/docs)
 
 ### Modules
 #### categories.js
+#### categories-schema.js
 #### product-schema.js
 #### products.js
 
