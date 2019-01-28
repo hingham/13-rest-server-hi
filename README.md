@@ -34,30 +34,30 @@
   * eturns a JSON object with name, description, display, and category inside
   
 Commands for the command line: 
-Post: echo '{
+Post: `echo '{
 	"name" : "a",
 	"display" : "b",
 	"description" : "c",
 	"category" : "my put",
-}' | http post :3000/api/v1/{route}
+}' | http post :3000/api/v1/{route}`
 
-put: echo '{
+put: `echo '{
 	"name" : "a",
 	"display" : "b",
 	"description" : "c",
 	"category" : "my put",
-}' | http put :3000/api/v1/{route}/{id}
+}' | http put :3000/api/v1/{route}/{id}`
 
-get: http :3000/api/v1/{route}/{id}
+get: `http :3000/api/v1/{route}/{id}`
 
-delete: http :3000/api/v1/{route}/{id}
+delete: `http :3000/api/v1/{route}/{id}`
 
 Running Mongo:
 * start mongodb path path/to/database
 * start mongod in another window
 * show dbs
-* connect: db = connect("localhost:27017/products")
-* run: db.products.find().pretty(); to print all items in db
+* connect: `db = connect("localhost:27017/store")`
+* run: `db.products.find().pretty();` to print all items in db
 
 #### Tests
 * How do you run tests? 
